@@ -1,1 +1,129 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --button-bg-color: #007BFF;
+    --button-hover-color: #0056b3;
+    --ventana-bg-color: #f9f9f9;
+    --ventana-border-color: #ccc;
+}
 
+/* Tema Claro (por defecto) */
+body.tema-claro {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --button-bg-color: #007BFF;
+    --button-hover-color: #0056b3;
+    --ventana-bg-color: #f9f9f9;
+    --ventana-border-color: #ccc;
+}
+
+/* Tema Oscuro */
+body.tema-oscuro {
+    --bg-color: #333333;
+    --text-color: #ffffff;
+    --button-bg-color: #666666;
+    --button-hover-color: #444444;
+    --ventana-bg-color: #444444;
+    --ventana-border-color: #666666;
+}
+
+/* Tema Azul */
+body.tema-azul {
+    --bg-color: #e6f0ff;
+    --text-color: #003366;
+    --button-bg-color: #0059b3;
+    --button-hover-color: #004080;
+    --ventana-bg-color: #cce0ff;
+    --ventana-border-color: #99c2ff;
+}
+
+/* Tema Verde */
+body.tema-verde {
+    --bg-color: #e6ffe6;
+    --text-color: #004d00;
+    --button-bg-color: #009900;
+    --button-hover-color: #006600;
+    --ventana-bg-color: #ccffcc;
+    --ventana-border-color: #99ff99;
+}
+
+/* Tema Rojo */
+body.tema-rojo {
+    --bg-color: #ffe6e6;
+    --text-color: #660000;
+    --button-bg-color: #cc0000;
+    --button-hover-color: #990000;
+    --ventana-bg-color: #ffcccc;
+    --ventana-border-color: #ff9999;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+}
+
+#ventana {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 300px;
+    padding: 20px;
+    background-color: var(--ventana-bg-color);
+    border: 1px solid var(--ventana-border-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button-bg-color);
+    color: white;
+}
+
+input[type="button"]:hover {
+    background-color: var(--button-hover-color);
+}
+
+label, #mensajeIntervalo {
+    font-size: 14px;
+}
+
+input[type="number"] {
+    width: 60%;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.selector-tema {
+    margin-top: 20px;
+}
+
+.selector-tema label {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.selector-tema select {
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
