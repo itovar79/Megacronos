@@ -1,5 +1,5 @@
 let inicio = 0, timeout = null, intervaloSonido = 38000, ciclos = 0, tiempoTotal = 0;
-const sonido = new Audio('https://www.soundjay.com/buttons/sounds/button-15.mp3');
+const sonido = new Audio('sounds/button-15.mp3');
 
 sonido.addEventListener('error', () => {
     console.error('Error al cargar el sonido.');
