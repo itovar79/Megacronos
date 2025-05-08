@@ -102,7 +102,7 @@ function funcionando() {
         if (diff >= intervaloSonido) {
             sonido.currentTime = 0;
             sonido.play();
-            inicio = Date.now();
+            inicio += intervaloSonido;
             ciclos++;
             tiempoTotal += intervaloSonido;
             updateDisplay();
