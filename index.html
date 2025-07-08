@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Cronómetro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <main id="ventana">
+        <h1>Cronos</h1>
+        <h2 id="crono">00:00:00:000</h2>
+        <input type="button" value="Empezar" onclick="empezarDetener(this);" aria-label="Iniciar o detener el cronómetro">
+        
+        <label for="intervaloSegundos">Intervalo (segundos):</label>
+        <input type="number" id="intervaloSegundos" value="38" min="1" max="9999">
+        <input type="button" value="Configurar intervalo" onclick="setIntervalo();">
+        <div id="mensajeIntervalo" style="margin: 10px 0;"></div>
+
+        <p id="ciclos">Ciclos: 0</p>
+        <p id="tiempoTotal">Tiempo total: 00:00</p>
+
+        <!-- Selector de tema -->
+        <div class="selector-tema">
+            <label for="temas">Seleccionar tema:</label>
+            <select id="temas" onchange="cambiarTema(this.value)">
+                <option value="claro">Claro</option>
+                <option value="oscuro">Oscuro</option>
+                <option value="azul">Azul</option>
+                <option value="verde">Verde</option>
+                <option value="rojo">Rojo</option>
+            </select>
+        </div>
+
+        <!-- Selector de sonido -->
+        <div class="selector-sonido">
+            <label for="sonido">Sonido:</label>
+            <select id="sonido">
+                <option value="alarma1.mp3">Alarma 1</option>
+                <option value="alarma2.mp3">Alarma 2</option>
+                <option value="alarma3.mp3">Alarma 3</option>
+                <option value="alarma4.mp3">Alarma 4</option>
+                <option value="alarma5.mp3">Alarma 5</option>
+                <option value="alarma6.mp3">Alarma 6</option>
+                <option value="alarma7.mp3">Alarma 7</option>
+                <option value="alarma8.mp3">Alarma 8</option>
+                <option value="alarma9.mp3">Alarma 9</option>
+                <option value="alarma10.mp3">Alarma 10</option>
+                <option value="alarma11.mp3">Alarma 11</option>
+                <option value="alarma12.mp3">Alarma 12</option>
+                <option value="alarma13.mp3">Alarma 13</option>
+                <option value="alarma14.mp3">Alarma 14</option>
+                <option value="alarma15.mp3">Alarma 15</option>
+            </select>
+        </div>
+
+        <footer id="footer">
+            CCN Home Office / ITOVAR / 203275 / tovar79@gmail.com
+        </footer>
+    </main>
+</body>
+</html>
